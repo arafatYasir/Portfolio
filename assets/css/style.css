@@ -1906,6 +1906,20 @@ canvas {
 /*--------------------------------------------------------------
 1. Portfolio
 ----------------------------------------------------------------*/
+#portfolio .row {
+  row-gap: 32px;
+}
+
+.portfolio-image {
+  width: 370px;
+  height: 200px;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
+}
+
 .st-portfolio {
   display: block;
   position: relative;
