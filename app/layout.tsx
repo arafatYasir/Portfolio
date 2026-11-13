@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og-image.png",
+        url: "/images/Yasir_Arafat_Developer_Portfolio_Banner.png",
         width: 1200,
         height: 630,
         alt: "Yasir Arafat - MERN Stack Developer",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Yasir Arafat | MERN Stack Developer & Competitive Programmer",
     description: "Portfolio of Yasir Arafat, a MERN stack developer and competitive programmer from Dhaka, Bangladesh.",
-    images: ["/og-image.png"],
+    images: ["/images/Yasir_Arafat_Developer_Portfolio_Banner.png"],
   },
   robots: {
     index: true,
