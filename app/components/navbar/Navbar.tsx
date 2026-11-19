@@ -54,7 +54,7 @@ const Navbar = ({ handleScrollTo, prevScrollValue }: Props) => {
         document.addEventListener("scroll", handleScroll);
 
         return () => document.removeEventListener("scroll", handleScroll);
-    }, []);
+    }, [prevScrollValue]);
 
     return (
         <nav
@@ -69,11 +69,13 @@ const Navbar = ({ handleScrollTo, prevScrollValue }: Props) => {
                 id="logo"
             >
                 <Image
-                    src="/images/logo.png"
+                    src="/images/Yasir_Arafat_Logo.png"
                     alt="Logo of Yasir Arafat"
-                    className="w-[42px] h-[42px]"
-                    width={42}
-                    height={42} />
+                    className="w-[42px] h-[42px] "
+                    width={500}
+                    height={500}
+                    loading="eager"
+                />
             </Link>
 
             {/* ---- Nav Options ---- */}
