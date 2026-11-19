@@ -9,6 +9,7 @@ import MobileNavbar from "./components/navbar/MobileNavbar";
 import { useMediaQuery } from "react-responsive";
 import HeroSection from "./components/HeroSection";
 import SocialLinks from "./components/SocialLinks";
+import FixedEmail from "./components/FixedEmail";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -71,6 +72,9 @@ const Home = () => {
 
       {/* ---- Fixed Social Links ---- */}
       <SocialLinks />
+
+      {/* ---- Fixed Email ---- */}
+      <FixedEmail />
     </>
   )
 }
