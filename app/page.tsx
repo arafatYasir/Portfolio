@@ -6,6 +6,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollToPlugin, ScrollTrigger } from "gsap/all";
 import MobileNavbar from "./components/navbar/MobileNavbar";
+import { useMediaQuery } from "react-responsive";
+import HeroSection from "./components/HeroSection";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -14,6 +16,10 @@ gsap.registerPlugin(ScrollToPlugin);
 const Home = () => {
   // Hooks
   const prevScrollValue = useRef(0);
+
+  // Extra responsive breakpoint
+  const breakpoint1 = useMediaQuery({ minWidth: 481 });
+  const breakpoint2 = useMediaQuery({ minWidth: 1001 });
 
   // Functions
   const handleScrollTo = (sectionId: string) => {
@@ -56,6 +62,11 @@ const Home = () => {
         <Navbar handleScrollTo={handleScrollTo} prevScrollValue={prevScrollValue} />
         <MobileNavbar handleScrollTo={handleScrollTo} />
       </header>
+
+      {/* ---- Main Part ---- */}
+      <main className={`max-w-[1600px] mx-auto ${breakpoint1 ? "px-[50px]" : "px-[25px]"} ${breakpoint2 ? "px-[150px]" : "md:px-[100px]"}`}>
+        <HeroSection />
+      </main>
     </>
   )
 }
