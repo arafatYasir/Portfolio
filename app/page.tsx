@@ -57,6 +57,70 @@ const Home = () => {
     });
   }
 
+  // Animating the navbar + hero + fixed social icons & email
+  useGSAP(() => {
+    // Delaying 3.5 secods to wait for the loading to be completed
+    const firstTimeline = gsap.timeline();
+
+    firstTimeline
+      // Logo
+      .from("#logo", {
+        opacity: 0,
+        ease: "sine.inOut",
+        duration: 1
+      })
+      // Nav Options
+      .from("#nav-item", {
+        opacity: 0,
+        yPercent: -100,
+        duration: 0.25,
+        ease: "cubic-bezier(0.645, 0.045, 0.355, 1)",
+        stagger: 0.15,
+      }, "-=1")
+      // Hero section
+      .from("#hero-greetings", {
+        opacity: 0,
+        yPercent: 20,
+        ease: "power4.inOut",
+      })
+      .from("#hero-name", {
+        opacity: 0,
+        yPercent: 17,
+        ease: "power4.inOut",
+        duration: 1
+      }, "-=0.3")
+      .from("#hero-profession", {
+        opacity: 0,
+        yPercent: 17,
+        ease: "power4.inOut",
+        duration: 0.5
+      }, "-=0.75")
+      .from("#hero-description", {
+        opacity: 0,
+        yPercent: 17,
+        ease: "power4.inOut",
+        duration: 0.5
+      }, "-=0.7")
+      .from("#hero-button", {
+        opacity: 0,
+        yPercent: 17,
+        ease: "power4.inOut",
+        duration: 0.5
+      }, "-=0.7")
+      // Social Links
+      .from("#social-links", {
+        opacity: 0,
+        ease: "sine.inOut",
+        duration: 1
+      }, "-=0.3")
+      // Fixed Email
+      .from("#fixed-email", {
+        opacity: 0,
+        ease: "sine.inOut",
+        duration: 1
+      }, "-=1")
+  }, []);
+
   return (
     <>
       {/* ---- Header Part ---- */}
