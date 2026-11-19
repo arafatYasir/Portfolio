@@ -10,7 +10,7 @@ interface Props {
 const Button = ({ value, fontSize = "14px", lineHeight = "14px", paddingX = "28px", paddingY = "20px", handleClick }: Props) => {
     return (
         <button
-            className="text-[#64ffda] border border-[#64ffda] rounded-[3px] hover:bg-[#64ffda12] cursor-pointer font-mono"
+            className="text-[#64ffda] border border-[#64ffda] rounded-[3px] hover:bg-[#64ffda12] active:bg-[#64ffda12] cursor-pointer font-mono"
             style={{
                 fontSize: fontSize,
                 padding: `${paddingY} ${paddingX}`,

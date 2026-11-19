@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/Navbar";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollToPlugin, ScrollTrigger } from "gsap/all";
+import MobileNavbar from "./components/navbar/MobileNavbar";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -53,6 +54,7 @@ const Home = () => {
       {/* ---- Header Part ---- */}
       <header>
         <Navbar handleScrollTo={handleScrollTo} prevScrollValue={prevScrollValue} />
+        <MobileNavbar handleScrollTo={handleScrollTo} />
       </header>
     </>
   )

@@ -83,7 +83,7 @@ const Navbar = ({ handleScrollTo, prevScrollValue }: Props) => {
                 className="flex items-center gap-x-5 font-mono text-center"
             >
                 {
-                    navOptions.map(option => (
+                    navOptions.map((option) => (
                         <li
                             id="nav-item"
                             key={option.id}
