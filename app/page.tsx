@@ -8,6 +8,7 @@ import { ScrollToPlugin, ScrollTrigger } from "gsap/all";
 import MobileNavbar from "./components/navbar/MobileNavbar";
 import { useMediaQuery } from "react-responsive";
 import HeroSection from "./components/HeroSection";
+import SocialLinks from "./components/SocialLinks";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -67,6 +68,9 @@ const Home = () => {
       <main className={`max-w-[1600px] mx-auto ${breakpoint1 ? "px-[50px]" : "px-[25px]"} ${breakpoint2 ? "px-[150px]" : "md:px-[100px]"}`}>
         <HeroSection />
       </main>
+
+      {/* ---- Fixed Social Links ---- */}
+      <SocialLinks />
     </>
   )
 }
