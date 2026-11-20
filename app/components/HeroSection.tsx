@@ -1,11 +1,11 @@
-import { useMediaQuery } from "react-responsive";
+import { useMediaQuery } from "../hooks/useMediaQuery";
 import Button from "./Button"
 import Link from "next/link";
 
 const HeroSection = () => {
     // Extra responsive breakpoints
-    const breakpoint1 = useMediaQuery({ minWidth: 377 });
-    const breakpoint2 = useMediaQuery({ minWidth: 481 });
+    const breakpoint1 = useMediaQuery("(min-width: 377px)");
+    const breakpoint2 = useMediaQuery("(min-width: 481px)");
 
     return (
         <section id="hero" className="flex items-center justify-center min-h-screen max-w-[1000px] mx-[clamp(0px,calc((100vw-1300px)/2),150px)] pt-[150px] pb-[100px] md:py-[150px]">

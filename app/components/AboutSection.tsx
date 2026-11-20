@@ -3,13 +3,13 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
-import { useMediaQuery } from "react-responsive";
+import { useMediaQuery } from "../hooks/useMediaQuery";
 
 const AboutSection = () => {
     // Extra responsive breakpoints
-    const breakpoint1 = useMediaQuery({ minWidth: 481 });
-    const breakpoint2 = useMediaQuery({ minWidth: 601 });
-    const breakpoint3 = useMediaQuery({ minWidth: 1001 });
+    const breakpoint1 = useMediaQuery("(min-width: 481px)");
+    const breakpoint2 = useMediaQuery("(min-width: 601px)");
+    const breakpoint3 = useMediaQuery("(min-width: 1001px)");
 
     // GSAP
     useGSAP(() => {

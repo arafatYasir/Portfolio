@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollToPlugin, ScrollTrigger } from "gsap/all";
 import MobileNavbar from "./components/navbar/MobileNavbar";
-import { useMediaQuery } from "react-responsive";
+import { useMediaQuery } from "./hooks/useMediaQuery";
 import HeroSection from "./components/HeroSection";
 import SocialLinks from "./components/SocialLinks";
 import FixedEmail from "./components/FixedEmail";
@@ -26,8 +26,8 @@ const Home = () => {
   const prevScrollValue = useRef(0);
 
   // Extra responsive breakpoint
-  const breakpoint1 = useMediaQuery({ minWidth: 481 });
-  const breakpoint2 = useMediaQuery({ minWidth: 1001 });
+  const breakpoint1 = useMediaQuery("(min-width: 481px)");
+  const breakpoint2 = useMediaQuery("(min-width: 1001px)");
 
   // Functions
   const handleScrollTo = (sectionId: string) => {
