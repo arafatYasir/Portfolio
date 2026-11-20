@@ -70,7 +70,7 @@ const Home = () => {
   useGSAP(() => {
     // Delaying 3.3 secods to wait for the loading to be completed
     const firstTimeline = gsap.timeline({
-      delay: 3.3
+      delay: 3.4
     });
 
     firstTimeline
