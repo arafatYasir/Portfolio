@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Navbar from "./components/navbar/Navbar";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -10,12 +10,16 @@ import { useMediaQuery } from "react-responsive";
 import HeroSection from "./components/HeroSection";
 import SocialLinks from "./components/SocialLinks";
 import FixedEmail from "./components/FixedEmail";
+import LoadingUI from "./components/LoadingUI"
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
 
 const Home = () => {
+  // States
+  const [isLoadingUI, setIsLoadingUI] = useState(true);
+
   // Hooks
   const prevScrollValue = useRef(0);
 
@@ -59,8 +63,10 @@ const Home = () => {
 
   // Animating the navbar + hero + fixed social icons & email
   useGSAP(() => {
-    // Delaying 3.5 secods to wait for the loading to be completed
-    const firstTimeline = gsap.timeline();
+    // Delaying 3.3 secods to wait for the loading to be completed
+    const firstTimeline = gsap.timeline({
+      delay: 3.3
+    });
 
     firstTimeline
       // Logo
@@ -121,8 +127,25 @@ const Home = () => {
       }, "-=1")
   }, []);
 
+  // Disabling scroll when loading screen is appearing and re-enabling it when loading is done
+  useEffect(() => {
+    const body = document.querySelector("body")!;
+
+    if (isLoadingUI) {
+      body.style.overflow = "hidden";
+    }
+    else {
+      body.style.overflow = "unset";
+    }
+  }, [isLoadingUI]);
+
   return (
     <>
+      {/* ---- Loading Screen ---- */}
+      {
+        isLoadingUI && <LoadingUI onAnimationComplete={() => setIsLoadingUI(false)} />
+      }
+
       {/* ---- Header Part ---- */}
       <header>
         <Navbar handleScrollTo={handleScrollTo} prevScrollValue={prevScrollValue} />
