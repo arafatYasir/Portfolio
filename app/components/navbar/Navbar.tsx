@@ -64,19 +64,19 @@ const Navbar = ({ handleScrollTo, prevScrollValue }: Props) => {
             }}
         >
             {/* ---- Logo ---- */}
-            <Link
+            <a
                 href="/"
                 id="logo"
             >
                 <Image
                     src="/images/Yasir_Arafat_Logo.png"
                     alt="Logo of Yasir Arafat"
-                    className="w-[42px] h-[42px] "
+                    className="w-[42px] h-[42px]"
                     width={500}
                     height={500}
                     loading="eager"
                 />
-            </Link>
+            </a>
 
             {/* ---- Nav Options ---- */}
             <ul
