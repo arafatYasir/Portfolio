@@ -13,6 +13,7 @@ import FixedEmail from "./components/FixedEmail";
 import LoadingUI from "./components/LoadingUI"
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
+import OtherProjectsSection from "./components/OtherProjectsSection";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -164,6 +165,7 @@ const Home = () => {
         <HeroSection />
         <AboutSection />
         <ProjectsSection />
+        <OtherProjectsSection />
       </main>
 
       {/* ---- Fixed Social Links ---- */}
