@@ -14,6 +14,7 @@ import LoadingUI from "./components/LoadingUI"
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
 import OtherProjectsSection from "./components/OtherProjectsSection";
+import ContactSection from "./components/ContactSection";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -166,6 +167,7 @@ const Home = () => {
         <AboutSection />
         <ProjectsSection />
         <OtherProjectsSection />
+        <ContactSection />
       </main>
 
       {/* ---- Fixed Social Links ---- */}
