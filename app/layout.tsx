@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
+import { Montserrat } from 'next/font/google';
 import "./globals.css";
 import JsonLd from "./components/JsonLd";
+
+// Font Initialization
+const monstserrat = Montserrat({
+  subsets: ["latin"],
+  weight: "variable",
+  variable: "--font-montserrat"
+})
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL!;
 
