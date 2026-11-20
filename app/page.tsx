@@ -15,6 +15,7 @@ import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
 import OtherProjectsSection from "./components/OtherProjectsSection";
 import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -169,6 +170,9 @@ const Home = () => {
         <OtherProjectsSection />
         <ContactSection />
       </main>
+
+      {/* ---- Footer Part ---- */}
+      <Footer />
 
       {/* ---- Fixed Social Links ---- */}
       <SocialLinks />
