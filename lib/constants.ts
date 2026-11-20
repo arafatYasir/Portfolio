@@ -54,3 +54,18 @@ export const socials = [
         link: "https://codeforces.com/profile/iamyasir.arafat01"
     },
 ];
+
+export const skills = [
+    "HTML5",
+    "Redux",
+    "CSS3",
+    "TypeScript",
+    "JavaScript (ES6+)",
+    "Next.js",
+    "Tailwind CSS",
+    "Node.js",
+    "Bootstrap",
+    "Express.js",
+    "React",
+    "MongoDB",
+];

@@ -11,6 +11,7 @@ import HeroSection from "./components/HeroSection";
 import SocialLinks from "./components/SocialLinks";
 import FixedEmail from "./components/FixedEmail";
 import LoadingUI from "./components/LoadingUI"
+import AboutSection from "./components/AboutSection";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -155,6 +156,7 @@ const Home = () => {
       {/* ---- Main Part ---- */}
       <main className={`max-w-[1600px] mx-auto ${breakpoint1 ? "px-[50px]" : "px-[25px]"} ${breakpoint2 ? "px-[150px]" : "md:px-[100px]"}`}>
         <HeroSection />
+        <AboutSection />
       </main>
 
       {/* ---- Fixed Social Links ---- */}
