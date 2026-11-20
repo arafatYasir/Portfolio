@@ -84,6 +84,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`h-full antialiased`}
     >
+      <head>
+        <meta name="apple-mobile-web-app-title" content="Yasir Arafat Portfolio" />
+      </head>
       <body>
         <JsonLd />
         {children}
