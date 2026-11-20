@@ -69,3 +69,39 @@ export const skills = [
     "React",
     "MongoDB",
 ];
+
+export const allProjects = [
+    {
+        id: 1,
+        name: "Project Name",
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla rerum tempora iusto commodi ex sed modi autem facilis obcaecati. Temporibus, facilis.",
+        technologies: [
+            "React", "Tailwind CSS", "GSAP"
+        ],
+        link: "https://rust-bell-04b.notion.site/29af4bf3bb0080d58361f0127305719b",
+        github: "https://rust-bell-04b.notion.site/29af4bf3bb0080d58361f0127305719b",
+        image: "/images/project_bla.png"
+    },
+    {
+        id: 2,
+        name: "Project Name",
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla rerum tempora iusto commodi ex sed modi autem facilis obcaecati. Temporibus, facilis.",
+        technologies: [
+            "React", "Tailwind CSS", "GSAP"
+        ],
+        link: "https://rust-bell-04b.notion.site/29af4bf3bb0080d58361f0127305719b",
+        github: "https://rust-bell-04b.notion.site/29af4bf3bb0080d58361f0127305719b",
+        image: "/images/project_bla.png"
+    },
+    {
+        id: 3,
+        name: "Project Name",
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla rerum tempora iusto commodi ex sed modi autem facilis obcaecati. Temporibus, facilis.",
+        technologies: [
+            "React", "Tailwind CSS", "GSAP"
+        ],
+        link: "https://rust-bell-04b.notion.site/29af4bf3bb0080d58361f0127305719b",
+        github: "https://rust-bell-04b.notion.site/29af4bf3bb0080d58361f0127305719b",
+        image: "/images/project_bla.png"
+    }
+]
