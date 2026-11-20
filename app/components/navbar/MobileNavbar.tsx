@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { useMediaQuery } from "react-responsive";
+import { useMediaQuery } from "../../hooks/useMediaQuery";
 import Button from "../Button";
 import Link from "next/link";
 import Image from "next/image";
@@ -22,9 +22,9 @@ const MobileNavbar = ({ handleScrollTo }: Props) => {
     const prevScrollValue = useRef(0);
 
     // Sidebar responsive breakpoints
-    const isSmallerMobile = useMediaQuery({ maxWidth: 330 });
-    const isMobile = useMediaQuery({ maxWidth: 480 });
-    const isTablet = useMediaQuery({ minWidth: 600 });
+    const isSmallerMobile = useMediaQuery("(max-width: 330px)");
+    const isMobile = useMediaQuery("(max-width: 480px)");
+    const isTablet = useMediaQuery("(min-width: 600px)");
 
     // Functions
     function startAnimation() {
