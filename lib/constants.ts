@@ -12,16 +12,11 @@ export const navOptions = [
     },
     {
         id: 2,
-        name: "Experience",
-        link: "jobs"
-    },
-    {
-        id: 3,
-        name: "Work",
+        name: "Projects",
         link: "projects"
     },
     {
-        id: 4,
+        id: 3,
         name: "Contact",
         link: "contact"
     },
