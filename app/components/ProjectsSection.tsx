@@ -55,9 +55,9 @@ const ProjectsSection = () => {
         <section id="projects" className="max-w-[1000px] mx-auto py-[100px] md:py-[150px]">
             {/* ---- Section Heading ---- */}
             <div className="flex items-center mt-2.5 mb-10">
-                <p className="font-mono text-lg md:text-xl leading-[23px] md:leading-[26px] text-[#64ffda] relative bottom-1 mr-2.5 select-none">03.</p>
+                <p className="font-mono text-lg md:text-xl leading-[23px] md:leading-[26px] text-[#64ffda] relative bottom-1 mr-2.5 select-none">02.</p>
 
-                <h3 className="font-calibre text-2xl leading-[31px] md:text-[32px] md:leading-[42px] text-[#ccd6f6] font-semibold">Some Things I&apos;ve Built</h3>
+                <h3 className="font-calibre text-2xl leading-[31px] md:text-[32px] md:leading-[42px] text-[#ccd6f6] font-semibold">Some Projects I&apos;ve Built</h3>
 
                 <hr className={`flex-1 ${breakpoint3 ? "max-w-[300px]" : "md:max-w-[200px]"} border-[#2d3952] ${breakpoint2 ? "ml-5" : "ml-2.5"} relative bottom-1`} />
             </div>
@@ -89,8 +89,8 @@ const ProjectsSection = () => {
                                     src={project.image}
                                     alt={project.name}
                                     className="w-full h-full rounded-[3px] object-cover object-center"
-                                    width={1239}
-                                    height={860}
+                                    width={1920}
+                                    height={910}
                                 />
                             </div>
                         </Link>
@@ -118,7 +118,7 @@ const ProjectsSection = () => {
                                 {project.description}
                             </p>
 
-                            <ul className={`flex gap-x-5 ${project.id % 2 == 0 ? "justify-start" : "justify-end"} mt-[25px] mb-2.5`}>
+                            <ul className={`flex flex-wrap gap-x-5 ${project.id % 2 == 0 ? "justify-start" : "justify-end"} mt-[25px] mb-2.5`}>
                                 {project.technologies.map((t, index) => (
                                     <li
                                         key={index}
