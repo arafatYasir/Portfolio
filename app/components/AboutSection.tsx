@@ -16,7 +16,7 @@ const AboutSection = () => {
         gsap.from("#about", {
             scrollTrigger: {
                 trigger: "#about",
-                start: "top 100%"
+                start: "top 95%"
             },
             opacity: 0,
             yPercent: 5,

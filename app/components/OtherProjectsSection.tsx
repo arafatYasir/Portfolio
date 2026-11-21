@@ -45,7 +45,7 @@ const OtherProjectsSection = () => {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: "#other-projects",
-                    start: "top 100%",
+                    start: "top 95%",
                     once: true,
                 },
                 delay: 0.35,

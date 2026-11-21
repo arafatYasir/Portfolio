@@ -44,7 +44,7 @@ const ProjectsSection = () => {
                 yPercent: 0,
                 scrollTrigger: {
                     trigger: project,
-                    start: "top 100%",
+                    start: "top 95%",
                 },
                 delay: 0.4
             });
