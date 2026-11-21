@@ -17,11 +17,11 @@ const HeroSection = () => {
                 </h1>
 
                 <h2 id="hero-profession" className={`font-calibre text-[40px] leading-[44px] ${breakpoint1 && "text-[50px] leading-[55px]"} ${breakpoint2 && "text-[60px] leading-[66px]"} md:text-[70px] md:leading-[77px] lg:text-[80px] lg:leading-[88px] font-semibold text-[#8892b0] mb-2.5`}>
-                    MERN Stack Developer, Competitive Programmer
+                    MERN Stack Developer & Competitive Programmer
                 </h2>
 
                 <p id="hero-description" className={`max-w-[500px] mt-[25px] mb-[15px] font-calibre text-lg leading-[23px] ${breakpoint2 && "text-xl leading-[26px]"} text-[#8892b0] text-justify`}>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem temporibus in totam deserunt sapiente dolorem consequatur, animi error? Iure, nam. Excepturi vel deserunt ex veritatis maxime ipsa dolor eaque quam nostrum ducimus.
+                    I came for cyber security and stayed for the web development. Now I build MERN stack web applications and have solved 500+ problems across different problem solving platforms. I&apos;m Based in Bangladesh, looking for remote opportunities.
                 </p>
 
                 <Link
