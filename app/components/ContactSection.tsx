@@ -12,7 +12,7 @@ const ContactSection = () => {
         gsap.from("#contact", {
             scrollTrigger: {
                 trigger: "#contact",
-                start: "top 90%"
+                start: "top 100%"
             },
             opacity: 0,
             yPercent: 6,
