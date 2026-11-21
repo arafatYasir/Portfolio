@@ -208,3 +208,28 @@ body {
 ::-moz-selection {
     background-color: #293d5afc !important;
 }
+
+
+/* ---- Custom Scrollbar ---- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #112240;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #233554;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #64ffda;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #233554 #112240;
+}
