@@ -72,36 +72,25 @@ export const skills = [
 export const allProjects = [
     {
         id: 1,
-        name: "Project Name",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla rerum tempora iusto commodi ex sed modi autem facilis obcaecati. Temporibus, facilis.",
+        name: "NextStep",
+        description: "NextStep is a SaaS platform that helps job seekers apply with confidence. Its four AI-driven tools analyze job descriptions, score your resume for ATS, build an ATS-optimized resume, and write cover letters, all tailored to the role you're targeting.",
         technologies: [
-            "React", "Tailwind CSS", "GSAP"
+            "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "Redux", "MongoDB", "Mongoose", "Zod", "Supabase Auth", "Gemini AI", "Inngest", "Stripe", "Cloudinary", "Web3Forms"
         ],
-        link: "https://rust-bell-04b.notion.site/29af4bf3bb0080d58361f0127305719b",
-        github: "https://rust-bell-04b.notion.site/29af4bf3bb0080d58361f0127305719b",
-        image: "/images/project_bla.png"
+        link: "https://career-next-step.vercel.app/",
+        github: "https://github.com/arafatYasir/NextStep",
+        image: "/images/project_nextstep.png"
     },
     {
         id: 2,
-        name: "Project Name",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla rerum tempora iusto commodi ex sed modi autem facilis obcaecati. Temporibus, facilis.",
+        name: "Prime Nest",
+        description: "PrimeNest is a full-stack real estate marketplace where buyers, sellers, and renters connect directly through built-in real-time chat. Browse listings with rich filters, then manage properties, proposals, and transactions, all in one place.",
         technologies: [
-            "React", "Tailwind CSS", "GSAP"
+            "React.js", "Node.js", "Express.js", "MongoDB", "Mongoose", "TypeScript", "Socket.io", "Tailwind CSS", "shadcn/ui", "Zustand", "TanStack Query", "React Hook Form", "Zod", "React Leaflet", "Clerk", "Stripe", "Cloudinary", "Web3Forms"
         ],
-        link: "https://rust-bell-04b.notion.site/29af4bf3bb0080d58361f0127305719b",
-        github: "https://rust-bell-04b.notion.site/29af4bf3bb0080d58361f0127305719b",
-        image: "/images/project_bla.png"
-    },
-    {
-        id: 3,
-        name: "Project Name",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla rerum tempora iusto commodi ex sed modi autem facilis obcaecati. Temporibus, facilis.",
-        technologies: [
-            "React", "Tailwind CSS", "GSAP"
-        ],
-        link: "https://rust-bell-04b.notion.site/29af4bf3bb0080d58361f0127305719b",
-        github: "https://rust-bell-04b.notion.site/29af4bf3bb0080d58361f0127305719b",
-        image: "/images/project_bla.png"
+        link: "https://your-prime-nest.vercel.app/",
+        github: "https://github.com/arafatYasir/PrimeNest",
+        image: "/images/project_prime_nest.png"
     }
 ];
 
