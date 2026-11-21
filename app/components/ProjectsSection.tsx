@@ -65,9 +65,9 @@ const ProjectsSection = () => {
             {/* ---- Projects ---- */}
             <div className={`flex flex-col ${breakpoint2 ? "gap-y-[100px]" : "gap-y-[70px]"}`}>
                 {allProjects.map((project) => (
-                    <div key={project.id}>
+                    <div key={project.id} className="project">
                         <div
-                            className={`project flex items-center relative ${project.id % 2 == 0 ? "justify-end" : "justify-start"}`}
+                            className={`flex items-center relative ${project.id % 2 == 0 ? "justify-end" : "justify-start"}`}
                         >
                             {/* ---- Project Image ---- */}
                             <Link
