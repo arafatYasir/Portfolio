@@ -52,17 +52,21 @@ export const socials = [
 
 export const skills = [
     "HTML5",
-    "Redux",
-    "CSS3",
-    "TypeScript",
-    "JavaScript (ES6+)",
-    "Next.js",
-    "Tailwind CSS",
-    "Node.js",
-    "Bootstrap",
-    "Express.js",
-    "React",
     "MongoDB",
+    "CSS3",
+    "Express.js",
+    "JavaScript (ES6+)",
+    "React.js",
+    "TypeScript",
+    "Node.js",
+    "Tailwind CSS",
+    "Next.js",
+    "Shadcn",
+    "Redux",
+    "GSAP",
+    "Zustand",
+    "C",
+    "C++"
 ];
 
 export const allProjects = [

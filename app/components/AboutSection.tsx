@@ -41,14 +41,14 @@ const AboutSection = () => {
                 {/* ---- Info Part ---- */}
                 <div className="md:w-[60%] max-w-[480px]">
                     <p className={`font-calibre ${breakpoint1 ? "text-xl leading-[26px]" : "text-lg leading-[23px]"} text-[#8892b0] mb-[15px] text-justify`}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sit saepe asperiores voluptatem aperiam, dignissimos sed enim expedita quam veniam?
+                        I started out curious about cyber security, but programming pulled me in harder. Web development won me over because I could write code and see the result right away, which is still the best feeling.
                     </p>
 
                     <p className={`font-calibre ${breakpoint1 ? "text-xl leading-[26px]" : "text-lg leading-[23px]"} text-[#8892b0] mb-[15px] text-justify`}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae saepe consequatur esse nesciunt natus aspernatur deleniti illo quam. Dolorum voluptatum quaerat sunt. Ipsum doloremque laborum ad, a quas necessitatibus labore.
+                        Today I build full-stack web applications with the MERN stack and practice competitive programming on LeetCode, Codeforces and other platforms. I&apos;m still new to the industry, but I&apos;m curious, consistent, and looking for a remote team where I can contribute & grow.
                     </p>
 
-                    <p className={`font-calibre ${breakpoint1 ? "text-xl leading-[26px]" : "text-lg leading-[23px]"} text-[#8892b0] mb-[15px] text-justify`}>These are some of the technologies I&apos;ve recently been working with:</p>
+                    <p className={`font-calibre ${breakpoint1 ? "text-xl leading-[26px]" : "text-lg leading-[23px]"} text-[#8892b0] mb-[15px] text-justify`}>Here&apos;s what&apos;s in my developer toolbox, from MERN stack essentials to the C++ I use for competitive programming.</p>
 
                     {/* ---- Skills List ---- */}
                     <ul style={{
