@@ -69,6 +69,7 @@ tests, or CI.
   `app/components/JsonLd.tsx`; update both.
 - `experimental.agentFeedback` is enabled. If `next dev` adds the `nextjs-agent-feedback`
   block, commit it.
+- Always follow the existing project's design system, including typography, fonts, color palette, spacing, borders, Tailwind conventions, and component patterns. Inspect existing implementations before introducing new styles, and ensure all new UI remains visually consistent with the established design.
 
 ## Baseline
 
