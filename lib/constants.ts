@@ -107,6 +107,15 @@ export const allProjects = [
 export const otherProjects: OtherProject[] = [
     {
         id: 1,
+        title: "LeetNote",
+        description: "LeetNote is a Chrome extension that turns a solved LeetCode problem into a useful note according to the solution.",
+        technologies: [
+            "HTML5", "CSS3", "TypeScript", "Manifest V3", "Zod", "Gemini API"
+        ],
+        github: "https://github.com/arafatYasir/LeetNote-AI-Extension"
+    },
+    {
+        id: 2,
         title: "iMessage",
         description: "A real-time chat app where messages arrive the moment they're sent, with no refreshing and no waiting around.",
         technologies: [
@@ -115,7 +124,7 @@ export const otherProjects: OtherProject[] = [
         github: "https://github.com/arafatYasir/iMessage"
     },
     {
-        id: 2,
+        id: 3,
         title: "Signalist",
         description: "Signalist is a real-time stock market analytics platform providing live market data, heatmaps, and visual insights etc.",
         technologies: [
@@ -124,26 +133,26 @@ export const otherProjects: OtherProject[] = [
         github: "https://github.com/arafatYasir/Signalist"
     },
     {
-        id: 3,
+        id: 4,
         title: "Linkora",
         description: "Linkora is a modern social media platform designed to help people connect, share ideas, and build meaningful digital relationships.",
         technologies: [
             "MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS", "JWT"
         ],
-        github: "https://github.com/arafatYasir/Signalist"
+        github: "https://github.com/arafatYasir/Linkora"
     },
     {
-        id: 4,
+        id: 5,
         title: "Velvel Pour",
         description: "A bar website for exploring a wide range of cocktails, with smooth GSAP animations throughout.",
         technologies: [
             "React.js", "Tailwind CSS", "GSAP"
         ],
         link: "https://velvel-pour.vercel.app/",
-        github: "https://github.com/arafatYasir/Signalist"
+        github: "https://github.com/arafatYasir/GSAP-Cocktails"
     },
     {
-        id: 5,
+        id: 6,
         title: "Movie Hub",
         description: "A browsing app for movies and TV shows, with search filtering and a details about every movie or tv shows",
         technologies: [
@@ -153,7 +162,7 @@ export const otherProjects: OtherProject[] = [
         github: "https://github.com/arafatYasir/Movie-Hub"
     },
     {
-        id: 6,
+        id: 7,
         title: "Snake Game",
         description: "A modern styled snake game to play on the browser. With scoring, play/pause and match difficulty features.",
         technologies: [
@@ -163,7 +172,7 @@ export const otherProjects: OtherProject[] = [
         github: "https://github.com/arafatYasir/Snake-Game"
     },
     {
-        id: 7,
+        id: 8,
         title: "CashFlow",
         description: "CashFlow is a personal finance tracker website designed to help users manage their income and expenses efficiently.",
         technologies: [
@@ -171,5 +180,15 @@ export const otherProjects: OtherProject[] = [
         ],
         link: "https://mycashflow-tracker.netlify.app/",
         github: "https://github.com/arafatYasir/CashFlow"
+    },
+    {
+        id: 9,
+        title: "Pokedex",
+        description: "Pokedex is a pokemon browsing website where you can find all pokemons and their full details such as hp, attack, defense, special attacks etc.",
+        technologies: [
+            "React.js", "CSS3"
+        ],
+        link: "https://151pokemons-info.netlify.app/",
+        github: "https://github.com/arafatYasir/Pokedex"
     },
 ];
