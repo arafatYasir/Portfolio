@@ -1,8 +1,11 @@
 import { useMediaQuery } from "../hooks/useMediaQuery";
-import Button from "./Button"
-import Link from "next/link";
+import Button from "./Button";
 
-const HeroSection = () => {
+interface Props {
+    handleScrollTo: (sectionId: string) => void;
+}
+
+const HeroSection = ({ handleScrollTo }: Props) => {
     // Extra responsive breakpoints
     const breakpoint1 = useMediaQuery("(min-width: 377px)");
     const breakpoint2 = useMediaQuery("(min-width: 481px)");
@@ -24,14 +27,9 @@ const HeroSection = () => {
                     I came for cyber security and stayed for the web development. Now I build MERN stack web applications and have solved 500+ problems across different problem solving platforms. I&apos;m Based in Bangladesh, looking for remote opportunities.
                 </p>
 
-                <Link
-                    id="hero-button"
-                    href="mailto:iamyasir.arafat01@gmail.com"
-                    target="_blank"
-                    className="inline-block mt-[50px]"
-                >
-                    <Button value="Get In Touch" />
-                </Link>
+                <div id="hero-button" className="mt-[50px]">
+                    <Button value="Get In Touch" handleClick={() => handleScrollTo("contact")} />
+                </div>
             </div>
         </section>
     )
