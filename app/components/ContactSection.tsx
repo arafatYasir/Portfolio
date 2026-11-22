@@ -4,6 +4,8 @@ import { useMediaQuery } from "../hooks/useMediaQuery";
 import gsap from "gsap";
 import Button from "./Button";
 
+const ACCESS_KEY = process.env.NEXT_PUBLIC_FORM_KEY!;
+
 const ContactSection = () => {
     // States
     const [formData, setFormData] = useState({
@@ -14,8 +16,9 @@ const ContactSection = () => {
     const [errors, setErrors] = useState({
         name: "",
         email: "",
-        message: ""
+        message: "",
     });
+    const [loading, setLoading] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
 
     // Extra responsive breakpoints
@@ -65,8 +68,9 @@ const ContactSection = () => {
         }
     };
 
-    const handleSubmit: React.SubmitEventHandler<HTMLFormElement> = (e) => {
+    const handleSubmit: React.SubmitEventHandler<HTMLFormElement> = async (e) => {
         e.preventDefault();
+
         const validationErrors = validateForm(formData);
         setErrors(validationErrors);
 
@@ -75,7 +79,34 @@ const ContactSection = () => {
             return;
         }
 
-        // If all validations pass do nothing for now (prior to Web3Forms integration)
+        // Send a mail via Web3Forms
+        try {
+            setLoading(true);
+
+            const fData = new FormData(e.target);
+            fData.append("access_key", ACCESS_KEY);
+
+            const res = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: fData
+            });
+
+            const data = await res.json();
+
+            if (data.success) {
+                setIsSubmitted(true);
+                setFormData({
+                    name: "", email: "", message: ""
+                });
+            } else {
+                setErrors((prev) => ({ ...prev, message: "Failed to send message!" }));
+            }
+        } catch (e) {
+            setErrors((prev) => ({ ...prev, message: "Failed to send message!" }));
+            console.log("Message sending error:", e);
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -185,7 +216,7 @@ const ContactSection = () => {
                         </div>
 
                         <div className="flex justify-center mt-4">
-                            <Button value="Send Message" />
+                            <Button value={loading ? "Sending..." : "Send Message"} disabled={loading} />
                         </div>
                     </form>
                 )}
