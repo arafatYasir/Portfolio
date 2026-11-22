@@ -65,93 +65,85 @@ const ProjectsSection = () => {
             {/* ---- Projects ---- */}
             <div className={`flex flex-col ${breakpoint2 ? "gap-y-[100px]" : "gap-y-[70px]"}`}>
                 {allProjects.map((project) => (
-                    <div key={project.id} className="project">
-                        <div
-                            className={`flex items-center relative ${project.id % 2 == 0 ? "justify-end" : "justify-start"}`}
+                    <div
+                        key={project.id}
+                        className={`project flex items-center relative ${project.id % 2 == 0 ? "justify-end" : "justify-start"}`}
+                    >
+                        {/* ---- Project Image ---- */}
+                        <Link
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`block ${breakpoint2 ? "w-[58.33%] relative h-[380px] md:h-[360px] max-w-[580px]" : "w-full opacity-25 absolute inset-0 h-full"} bg-[#64ffda] rounded-[3px] hover:bg-transparent before:absolute before:cotent-[''] before:w-full before:h-full before:inset-0 before:z-3 before:bg-[#0a192f] before:mix-blend-screen group select-none`}
+                            style={{
+                                transition: "0.25s cubic-bezier(0.645, 0.045, 0.355, 1)"
+                            }}
                         >
-                            {/* ---- Project Image ---- */}
-                            <Link
-                                href={project.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={`block ${breakpoint2 ? "w-[58.33%] relative h-[380px] md:h-[360px] max-w-[580px]" : "w-full opacity-25 absolute inset-0 h-full"} bg-[#64ffda] rounded-[3px] hover:bg-transparent before:absolute before:cotent-[''] before:w-full before:h-full before:inset-0 before:z-3 before:bg-[#0a192f] before:mix-blend-screen group select-none`}
+                            <div
+                                className="rounded-[3px] grayscale contrast brightness-90 mix-blend-multiply group group-hover:grayscale-0 group-hover:brightness-100 group-hover:mix-blend-normal w-full h-full"
                                 style={{
                                     transition: "0.25s cubic-bezier(0.645, 0.045, 0.355, 1)"
                                 }}
                             >
-                                <div
-                                    className="rounded-[3px] grayscale contrast brightness-90 mix-blend-multiply group group-hover:grayscale-0 group-hover:brightness-100 group-hover:mix-blend-normal w-full h-full"
+                                <Image
+                                    src={project.image}
+                                    alt={project.name}
+                                    className="w-full h-full rounded-[3px] object-cover object-center"
+                                    width={1920}
+                                    height={910}
+                                />
+                            </div>
+                        </Link>
+
+
+                        {/* ---- Project Details ---- */}
+                        <div className={`${breakpoint1 ? "pt-[30px] px-[25px] pb-[20px]" : ""} ${breakpoint2 ? "absolute w-[50%] p-0" : "relative w-full"} ${!breakpoint1 && !breakpoint2 ? "pt-10 px-10 pb-[30px]" : ""} z-5 md:max-w-[495px] ${project.id % 2 == 0 ? "text-left left-0" : "text-right right-0"}`}>
+                            <p className="font-mono text-[13px] text-[#64ffda] leading-[17px] my-[10px]">Featured Project</p>
+
+                            <h4
+                                className="inline-block font-calibre font-semibold text-2xl leading-[31px] md:text-[28px] md:leading-[36px] text-[#ccd6f6] mb-5 cursor-pointer"
+                                style={{
+                                    transition: "0.25s cubic-bezier(0.645, 0.045, 0.355, 1)"
+                                }}
+                            >
+                                <a href={project.link} target="_blank" className="focus:text-[#64ffda] active:bg-[#226185] active:text-[#64ffda] hover:text-[#64ffda]">{project.name}</a>
+                            </h4>
+
+                            <p
+                                className={`font-calibre text-lg text-[#a8b2d1] leading-[23px] rounded-[3px] ${breakpoint2 ? "bg-[#172a45] p-[25px]" : "bg-transparent py-5"}`}
+                                style={{
+                                    boxShadow: `${breakpoint2 ? "rgba(2, 12, 27, 0.7) 0px 10px 30px -15px" : "none"}`
+                                }}
+                            >
+                                {project.description}
+                            </p>
+
+                            {/* ---- Links ---- */}
+                            <div className={`mt-2.5 ${project.id % 2 == 0 ? "-ml-2.5" : "-mr-2.5"}`}>
+                                <Link
+                                    href={project.github}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-[#ccd6f6] focus:text-[#64ffda] active:bg-[#226185] active:text-[#64ffda] hover:text-[#64ffda] inline-block p-2.5"
                                     style={{
                                         transition: "0.25s cubic-bezier(0.645, 0.045, 0.355, 1)"
                                     }}
                                 >
-                                    <Image
-                                        src={project.image}
-                                        alt={project.name}
-                                        className="w-full h-full rounded-[3px] object-cover object-center"
-                                        width={1920}
-                                        height={910}
-                                    />
-                                </div>
-                            </Link>
-
-
-                            {/* ---- Project Details ---- */}
-                            <div className={`${breakpoint1 ? "pt-[30px] px-[25px] pb-[20px]" : ""} ${breakpoint2 ? "absolute w-[50%] p-0" : "relative w-full"} ${!breakpoint1 && !breakpoint2 ? "pt-10 px-10 pb-[30px]" : ""} z-5 md:max-w-[495px] ${project.id % 2 == 0 ? "text-left left-0" : "text-right right-0"}`}>
-                                <p className="font-mono text-[13px] text-[#64ffda] leading-[17px] my-[10px]">Featured Project</p>
-
-                                <h4
-                                    className="inline-block font-calibre font-semibold text-2xl leading-[31px] md:text-[28px] md:leading-[36px] text-[#ccd6f6] mb-5 cursor-pointer"
+                                    <GitHubIcon width={22} height={21} />
+                                </Link>
+                                <Link
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-[#ccd6f6] focus:text-[#64ffda] active:bg-[#226185] active:text-[#64ffda] hover:text-[#64ffda] inline-block p-2.5"
                                     style={{
                                         transition: "0.25s cubic-bezier(0.645, 0.045, 0.355, 1)"
                                     }}
                                 >
-                                    <a href={project.link} target="_blank" className="focus:text-[#64ffda] active:bg-[#226185] active:text-[#64ffda] hover:text-[#64ffda]">{project.name}</a>
-                                </h4>
-
-                                <p
-                                    className={`font-calibre text-lg text-[#a8b2d1] leading-[23px] rounded-[3px] ${breakpoint2 ? "bg-[#172a45] p-[25px]" : "bg-transparent py-5"}`}
-                                    style={{
-                                        boxShadow: `${breakpoint2 ? "rgba(2, 12, 27, 0.7) 0px 10px 30px -15px" : "none"}`
-                                    }}
-                                >
-                                    {project.description}
-                                </p>
-
-                                {/* ---- Links ---- */}
-                                <div className={`mt-2.5 ${project.id % 2 == 0 ? "-ml-2.5" : "-mr-2.5"}`}>
-                                    <Link
-                                        href={project.github}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-[#ccd6f6] focus:text-[#64ffda] active:bg-[#226185] active:text-[#64ffda] hover:text-[#64ffda] inline-block p-2.5"
-                                        style={{
-                                            transition: "0.25s cubic-bezier(0.645, 0.045, 0.355, 1)"
-                                        }}
-                                    >
-                                        <GitHubIcon width={22} height={21} />
-                                    </Link>
-                                    <Link
-                                        href={project.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-[#ccd6f6] focus:text-[#64ffda] active:bg-[#226185] active:text-[#64ffda] hover:text-[#64ffda] inline-block p-2.5"
-                                        style={{
-                                            transition: "0.25s cubic-bezier(0.645, 0.045, 0.355, 1)"
-                                        }}
-                                    >
-                                        <RedirectIcon />
-                                    </Link>
-                                </div>
+                                    <RedirectIcon />
+                                </Link>
                             </div>
                         </div>
-
-                        {/* ---- Technologies ---- */}
-                        <hr className={`w-full border-[#2d3952] mt-2.5`} />
-                        <p className={`font-mono text-[13px] text-justify ${breakpoint2 ? "text-[#8892b0]" : "text-[#ccd6f6]"} leading-[20px] my-2.5`}>
-                            <span className="text-[#64ffda] font-semibold">Technologies: </span>
-                            {project.technologies.join(" · ")}
-                        </p>
                     </div>
                 ))}
             </div>
