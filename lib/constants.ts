@@ -4,6 +4,16 @@ import LinkedInIcon from "../app/icons/LinkedInIcon";
 import LeetCodeIcon from "@/app/icons/LeetCodeIcon";
 import CodeforcesIcon from "@/app/icons/CodeforcesIcon";
 
+// Types & Interfaces
+interface OtherProject {
+    id: number;
+    title: string;
+    description: string;
+    technologies: string[];
+    link?: string;
+    github: string;
+}
+
 export const navOptions = [
     {
         id: 1,
@@ -94,35 +104,72 @@ export const allProjects = [
     }
 ];
 
-export const otherProjects = [
+export const otherProjects: OtherProject[] = [
     {
         id: 1,
-        title: "Project Name",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea doloremque debitis eos nostrum quaerat?",
+        title: "iMessage",
+        description: "A real-time chat app where messages arrive the moment they're sent, with no refreshing and no waiting around.",
         technologies: [
-            "React", "Tailwind CSS", "GSAP"
+            "MongoDB", "Express.js", "React.js", "Node.js", "Socket.io", "Tailwind CSS"
         ],
-        link: "https://rust-bell-04b.notion.site/29af4bf3bb0080d58361f0127305719b",
-        github: "https://rust-bell-04b.notion.site/29af4bf3bb0080d58361f0127305719b"
+        github: "https://github.com/arafatYasir/iMessage"
     },
     {
         id: 2,
-        title: "Project Name",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea doloremque debitis eos nostrum quaerat?",
+        title: "Signalist",
+        description: "Signalist is a real-time stock market analytics platform providing live market data, heatmaps, and visual insights etc.",
         technologies: [
-            "React", "Tailwind CSS", "GSAP"
+            "Next.js", "TypeScript", "MongoDB", "Better Auth", "Tailwind CSS"
         ],
-        link: "https://rust-bell-04b.notion.site/29af4bf3bb0080d58361f0127305719b",
-        github: "https://rust-bell-04b.notion.site/29af4bf3bb0080d58361f0127305719b"
+        github: "https://github.com/arafatYasir/Signalist"
     },
     {
         id: 3,
-        title: "Project Name",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea doloremque debitis eos nostrum quaerat?",
+        title: "Linkora",
+        description: "Linkora is a modern social media platform designed to help people connect, share ideas, and build meaningful digital relationships.",
         technologies: [
-            "React", "Tailwind CSS", "GSAP"
+            "MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS", "JWT"
         ],
-        link: "https://rust-bell-04b.notion.site/29af4bf3bb0080d58361f0127305719b",
-        github: "https://rust-bell-04b.notion.site/29af4bf3bb0080d58361f0127305719b"
-    }
+        github: "https://github.com/arafatYasir/Signalist"
+    },
+    {
+        id: 4,
+        title: "Velvel Pour",
+        description: "A bar website for exploring a wide range of cocktails, with smooth GSAP animations throughout.",
+        technologies: [
+            "React.js", "Tailwind CSS", "GSAP"
+        ],
+        link: "https://velvel-pour.vercel.app/",
+        github: "https://github.com/arafatYasir/Signalist"
+    },
+    {
+        id: 5,
+        title: "Movie Hub",
+        description: "A browsing app for movies and TV shows, with search filtering and a details about every movie or tv shows",
+        technologies: [
+            "React.js", "Tailwind CSS"
+        ],
+        link: "https://findmovies4u.netlify.app/",
+        github: "https://github.com/arafatYasir/Movie-Hub"
+    },
+    {
+        id: 6,
+        title: "Snake Game",
+        description: "A modern styled snake game to play on the browser. With scoring, play/pause and match difficulty features.",
+        technologies: [
+            "HTML5", "CSS3", "JavaScript (ES6+)"
+        ],
+        link: "https://arafatyasir.github.io/Snake-Game/",
+        github: "https://github.com/arafatYasir/Snake-Game"
+    },
+    {
+        id: 7,
+        title: "CashFlow",
+        description: "CashFlow is a personal finance tracker website designed to help users manage their income and expenses efficiently.",
+        technologies: [
+            "React.js", "Tailwind CSS", "Firebase"
+        ],
+        link: "https://mycashflow-tracker.netlify.app/",
+        github: "https://github.com/arafatYasir/CashFlow"
+    },
 ];
