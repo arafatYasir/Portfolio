@@ -143,18 +143,20 @@ const OtherProjectsSection = () => {
                                 >
                                     <GitHubIcon width={22} height={21} />
                                 </Link>
-                                
-                                <Link
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-[#ccd6f6] hover:text-[#64ffda] inline-block p-2.5"
-                                    style={{
-                                        transition: "0.25s cubic-bezier(0.645, 0.045, 0.355, 1)"
-                                    }}
-                                >
-                                    <RedirectIcon />
-                                </Link>
+
+                                {(project?.link && project.link.trim()) && (
+                                    <Link
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-[#ccd6f6] hover:text-[#64ffda] inline-block p-2.5"
+                                        style={{
+                                            transition: "0.25s cubic-bezier(0.645, 0.045, 0.355, 1)"
+                                        }}
+                                    >
+                                        <RedirectIcon />
+                                    </Link>
+                                )}
                             </div>
                         </div>
 
