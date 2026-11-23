@@ -39,7 +39,7 @@ const AboutSection = () => {
             {/* ---- Main Content Wrapper ---- */}
             <div className="flex flex-col gap-y-[60px] md:flex-row justify-between md:gap-x-[60px]">
                 {/* ---- Info Part ---- */}
-                <div className="md:w-[60%] max-w-[480px]">
+                <div className="md:w-[60%]">
                     <p className={`font-calibre ${breakpoint1 ? "text-xl leading-[26px]" : "text-lg leading-[23px]"} text-[#8892b0] mb-[15px] text-justify`}>
                         I started out curious about cyber security, but programming pulled me in harder. Web development won me over because I could write code and see the result right away, which is still the best feeling.
                     </p>

@@ -1,8 +1,3 @@
-import GitHubIcon from "../icons/GitHubIcon"
-import LinkedInIcon from "../icons/LinkedInIcon"
-import MediumIcon from "../icons/MediumIcon"
-import LeetCodeIcon from "../icons/LeetCodeIcon"
-import CodeforcesIcon from "../icons/CodeforcesIcon"
 import { useMediaQuery } from "../hooks/useMediaQuery"
 import { socials } from "@/lib/constants"
 import Link from "next/link"
@@ -23,11 +18,11 @@ const Footer = () => {
                                 key={social.id}
                                 className=""
                             >
-                                <a
+                                <Link
                                     href={social.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[#a8b2d1] hover:text-[#64ffda] block hover:translate-y-[-3px] p-2.5"
+                                    className="text-[#a8b2d1] active:text-[#64ffda] block p-2.5"
                                     style={{
                                         transition: "0.25s cubic-bezier(0.645, 0.045, 0.355, 1)"
                                     }}
@@ -36,7 +31,7 @@ const Footer = () => {
                                         width={social.link.includes("leetcode") ? 24 : 20}
                                         height={social.link.includes("leetcode") ? 24 : 20} 
                                     />
-                                </a>
+                                </Link>
                             </li>
                         )
                     })
