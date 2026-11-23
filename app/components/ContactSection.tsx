@@ -114,7 +114,7 @@ const ContactSection = () => {
             {/* ---- Section Heading ---- */}
             <div>
                 <p className={`font-mono ${breakpoint1 ? "text-base leading-[21px]" : "text-sm leading-[18px]"} text-[#64ffda] text-center mt-2.5 mb-5`}>
-                    <span className="select-none">03. </span>
+                    <span className="select-none">04. </span>
                     What&apos;s Next?
                 </p>
 

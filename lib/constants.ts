@@ -27,6 +27,11 @@ export const navOptions = [
     },
     {
         id: 3,
+        name: "Blogs",
+        link: "blogs"
+    },
+    {
+        id: 4,
         name: "Contact",
         link: "contact"
     },
@@ -192,3 +197,36 @@ export const otherProjects: OtherProject[] = [
         github: "https://github.com/arafatYasir/Pokedex"
     },
 ];
+
+export const blogs = [
+    {
+        id: 1,
+        image: "/images/blog1.webp",
+        title: "How to Build a Responsive Webpage with HTML and Minimal CSS",
+        description: "Building responsive webpages has become an essential skill for web developers in today’s mobile-first world. A responsive webpage adapts seamlessly to different screen sizes, ensuring an optimal user experience on desktops, tablets, and smartphones. While frameworks like Bootstrap are popular for creating responsive designs, you can achieve impressive results with just HTML and minimal CSS. In this guide, we’ll walk you through the steps to build a fully responsive webpage using a streamlined approach.",
+        date: "Jan 9, 2025",
+        readTime: "4 min read",
+        tags: ["HTML", "CSS", "Responsive Design"],
+        link: "https://medium.com/@arafatYasir/how-to-build-a-responsive-webpage-with-html-and-minimal-css-9954ccba2084"
+    },
+    {
+        id: 2,
+        image: "/images/blog2.webp",
+        title: "Mastering Semantic HTML: A Beginner’s Guide to Accessible Webpages",
+        description: "In today’s web development landscape, semantic HTML plays a critical role in creating accessible, user-friendly, and well-structured websites. Whether you’re a novice or a seasoned developer, understanding semantic HTML is essential for building webpages that are not only visually appealing but also functional for all users, including those relying on assistive technologies.",
+        date: "Jan 9, 2025",
+        readTime: "3 min read",
+        tags: ["HTML"],
+        link: "https://medium.com/@arafatYasir/mastering-semantic-html-a-beginners-guide-to-accessible-webpages-1cfc53cb6076"
+    },
+    {
+        id: 3,
+        image: "/images/blog3.webp",
+        title: "10 Best Practices in CSS3 for Every Web Developer",
+        description: "CSS3 is an essential tool for creating modern, responsive web designs. While it’s easy to learn the basics, applying best practices ensures your code is clean, efficient, and maintainable. Here are 10 key practices every web developer should follow:",
+        date: "Jan 9, 2025",
+        readTime: "3 min read",
+        tags: ["CSS"],
+        link: "https://medium.com/@arafatYasir/10-best-practices-in-css3-for-every-web-developer-8e30fcc7773e"
+    }
+]

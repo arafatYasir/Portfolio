@@ -14,6 +14,7 @@ import LoadingUI from "./components/LoadingUI"
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
 import OtherProjectsSection from "./components/OtherProjectsSection";
+import BlogsSection from "./components/BlogsSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 
@@ -168,6 +169,7 @@ const Home = () => {
         <AboutSection />
         <ProjectsSection />
         <OtherProjectsSection />
+        <BlogsSection />
         <ContactSection />
       </main>
 
