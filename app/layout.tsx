@@ -99,6 +99,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`h-full antialiased`}
     >
+      <head>
+        <meta name="google-site-verification" content="mWxNqxi5A4s4Uwicxc9Mpa14-cuqKVbf_Wd6aVtPb8Y" />
+      </head>
       <body>
         <JsonLd />
         {children}
