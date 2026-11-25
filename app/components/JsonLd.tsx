@@ -11,6 +11,17 @@ const jsonLd = {
             image: `${SITE_URL}/images/Yasir_Arafat.jpg`,
             jobTitle: "MERN Stack Developer",
             description: "Yasir Arafat is a MERN stack developer and competitive programmer from Dhaka, Bangladesh.",
+            disambiguatingDescription:
+                "MERN stack developer and competitive programmer based in Dhaka, Bangladesh.",
+            hasOccupation: {
+                "@type": "Occupation",
+                name: "MERN Stack Developer",
+                occupationLocation: {
+                    "@type": "City",
+                    name: "Dhaka",
+                },
+                skills: "MongoDB, Express.js, React, Node.js, Next.js, TypeScript",
+            },
             address: {
                 "@type": "PostalAddress",
                 addressLocality: "Dhaka",
@@ -33,6 +44,8 @@ const jsonLd = {
                 "https://www.linkedin.com/in/arafatYasir01",
                 "https://leetcode.com/u/arafatYasir01",
                 "https://codeforces.com/profile/iamyasir.arafat01",
+                "https://medium.com/@arafatYasir",
+                "https://x.com/arafatYasir09",
             ],
         },
         {

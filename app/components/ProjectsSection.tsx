@@ -74,7 +74,7 @@ const ProjectsSection = () => {
                             href={project.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`block ${breakpoint2 ? "w-[58.33%] relative h-[380px] md:h-[360px] max-w-[580px]" : "w-full opacity-25 absolute inset-0 h-full"} bg-[#64ffda] rounded-[3px] hover:bg-transparent before:absolute before:cotent-[''] before:w-full before:h-full before:inset-0 before:z-3 before:bg-[#0a192f] before:mix-blend-screen group select-none`}
+                            className={`block ${breakpoint2 ? "w-[58.33%] relative h-[380px] md:h-[360px] max-w-[580px]" : "w-full opacity-25 absolute inset-0 h-full"} bg-[#64ffda] rounded-[3px] hover:bg-transparent before:absolute before:content-[''] before:w-full before:h-full before:inset-0 before:z-3 before:bg-[#0a192f] before:mix-blend-screen group select-none`}
                             style={{
                                 transition: "0.25s cubic-bezier(0.645, 0.045, 0.355, 1)"
                             }}

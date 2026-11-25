@@ -53,7 +53,7 @@ const AboutSection = () => {
                     {/* ---- Skills List ---- */}
                     <ul style={{
                         display: "grid",
-                        gridTemplateColumns: "repeat(2, minmax(140px, 200px)"
+                        gridTemplateColumns: "repeat(2, minmax(140px, 200px))"
                     }}>
                         {
                             skills.map((skill, index) => (

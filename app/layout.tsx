@@ -11,6 +11,8 @@ const monstserrat = Montserrat({
 })
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL!;
+const DESCRIPTION =
+  "Yasir Arafat is a MERN stack developer and competitive programmer from Dhaka, Bangladesh. Explore his projects, skills, and contact info.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -18,7 +20,7 @@ export const metadata: Metadata = {
     default: "Yasir Arafat | MERN Stack Developer & Competitive Programmer",
     template: "%s | Yasir Arafat",
   },
-  description: "Yasir Arafat is a MERN stack developer and competitive programmer from Dhaka, Bangladesh. Explore his projects, skills, and contact info.",
+  description: DESCRIPTION,
   applicationName: "Yasir Arafat Portfolio",
   keywords: [
     "Yasir Arafat",
@@ -42,22 +44,35 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: "Yasir Arafat",
     title: "Yasir Arafat | MERN Stack Developer & Competitive Programmer",
-    description: "Portfolio of Yasir Arafat, a MERN stack developer and competitive programmer from Dhaka, Bangladesh.",
+    description: DESCRIPTION,
     locale: "en_US",
     images: [
       {
         url: "/images/Yasir_Arafat_Developer_Portfolio_Banner.png",
         width: 1200,
         height: 630,
+        type: "image/png",
         alt: "Yasir Arafat - MERN Stack Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
+    site: "@arafatYasir09",
+    creator: "@arafatYasir09",
     title: "Yasir Arafat | MERN Stack Developer & Competitive Programmer",
-    description: "Portfolio of Yasir Arafat, a MERN stack developer and competitive programmer from Dhaka, Bangladesh.",
+    description: DESCRIPTION,
     images: ["/images/Yasir_Arafat_Developer_Portfolio_Banner.png"],
+  },
+  verification: {
+    ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION && {
+      google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    }),
+    ...(process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION && {
+      other: {
+        "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION,
+      },
+    }),
   },
   robots: {
     index: true,
@@ -84,9 +99,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`h-full antialiased`}
     >
-      <head>
-        <meta name="apple-mobile-web-app-title" content="Yasir Arafat Portfolio" />
-      </head>
       <body>
         <JsonLd />
         {children}
