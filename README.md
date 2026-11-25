@@ -14,7 +14,7 @@ MERN stack developer and competitive programmer from Dhaka, Bangladesh.
 
 </div>
 
-<img width="1919" height="1079" alt="Screenshot 2026-11-25 152354" src="https://github.com/user-attachments/assets/5c12c961-12b3-4b84-a9f4-be4a51ed2ae6" />
+<img width="1919" height="1079" alt="Screenshot of Yasir Arafat's Portfolio" src="https://github.com/user-attachments/assets/5c12c961-12b3-4b84-a9f4-be4a51ed2ae6" />
 
 ## 👋 About
 
