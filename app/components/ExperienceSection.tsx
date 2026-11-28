@@ -50,7 +50,7 @@ const ExperienceSection = () => {
                 </p>
 
                 <h3 className="font-calibre text-2xl leading-[31px] md:text-[32px] md:leading-[42px] text-[#ccd6f6] font-semibold whitespace-nowrap">
-                    Experience
+                    My Experience
                 </h3>
 
                 <hr
