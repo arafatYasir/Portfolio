@@ -165,7 +165,7 @@ const Home = () => {
 
       {/* ---- Main Part ---- */}
       <main className={`max-w-[1600px] mx-auto ${breakpoint1 ? "px-[50px]" : "px-[25px]"} ${breakpoint2 ? "px-[150px]" : "md:px-[100px]"}`}>
-        <HeroSection handleScrollTo={handleScrollTo} />
+        <HeroSection />
         <AboutSection />
         <ProjectsSection />
         <OtherProjectsSection />

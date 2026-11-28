@@ -3,6 +3,7 @@ import MediumIcon from "../app/icons/MediumIcon";
 import LinkedInIcon from "../app/icons/LinkedInIcon";
 import LeetCodeIcon from "@/app/icons/LeetCodeIcon";
 import CodeforcesIcon from "@/app/icons/CodeforcesIcon";
+import { link } from "fs";
 
 // Types & Interfaces
 interface OtherProject {
@@ -22,16 +23,21 @@ export const navOptions = [
     },
     {
         id: 2,
+        name: "Experience",
+        link: "experience"
+    },
+    {
+        id: 3,
         name: "Projects",
         link: "projects"
     },
     {
-        id: 3,
+        id: 4,
         name: "Blogs",
         link: "blogs"
     },
     {
-        id: 4,
+        id: 5,
         name: "Contact",
         link: "contact"
     },
