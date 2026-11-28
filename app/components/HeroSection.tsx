@@ -1,11 +1,8 @@
+import Link from "next/link";
 import { useMediaQuery } from "../hooks/useMediaQuery";
 import Button from "./Button";
 
-interface Props {
-    handleScrollTo: (sectionId: string) => void;
-}
-
-const HeroSection = ({ handleScrollTo }: Props) => {
+const HeroSection = () => {
     // Extra responsive breakpoints
     const breakpoint1 = useMediaQuery("(min-width: 377px)");
     const breakpoint2 = useMediaQuery("(min-width: 481px)");
@@ -28,7 +25,13 @@ const HeroSection = ({ handleScrollTo }: Props) => {
                 </p>
 
                 <div id="hero-button" className="mt-[50px]">
-                    <Button value="Get In Touch" handleClick={() => handleScrollTo("contact")} />
+                    <Link
+                        href="/resume/YasirArafat_Frontend_Developer_Resume.pdf"
+                        target="_blank"
+                        className="cursor-pointer"
+                    >
+                        <Button value="View My Resume" />
+                    </Link>
                 </div>
             </div>
         </section>

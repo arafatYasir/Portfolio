@@ -1,8 +1,6 @@
 import { navOptions } from "@/lib/constants";
 import Image from "next/image";
-import Link from "next/link";
 import { useState, useEffect } from "react";
-import Button from "../Button";
 
 interface Props {
     handleScrollTo: (sectionId: string) => void;
@@ -101,15 +99,6 @@ const Navbar = ({ handleScrollTo, prevScrollValue }: Props) => {
                         </li>
                     ))
                 }
-                <li id="nav-item">
-                    <Link
-                        href="/resume/YasirArafat_Frontend_Developer_Resume.pdf"
-                        target="_blank"
-                        className="cursor-pointer"
-                    >
-                        <Button value="Resume" paddingX="16px" paddingY="12px" fontSize="13px" />
-                    </Link>
-                </li>
             </ul>
         </nav>
     )
