@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
-import Button from "../Button";
 import Link from "next/link";
 import Image from "next/image";
 import { navOptions } from "@/lib/constants";
@@ -202,16 +201,6 @@ const MobileNavbar = ({ handleScrollTo }: Props) => {
                             </li>
                         ))
                     }
-
-                    <li className="mt-[22px]">
-                        <Link
-                            href="/resume/YasirArafat_Frontend_Developer_Resume.pdf"
-                            target="_blank"
-                            className="cursor-pointer"
-                        >
-                            <Button value="Resume" paddingX="50px" paddingY="18px" fontSize="14px" />
-                        </Link>
-                    </li>
                 </ul>
             </div>
         </nav >
