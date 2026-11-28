@@ -3,7 +3,6 @@ import MediumIcon from "../app/icons/MediumIcon";
 import LinkedInIcon from "../app/icons/LinkedInIcon";
 import LeetCodeIcon from "@/app/icons/LeetCodeIcon";
 import CodeforcesIcon from "@/app/icons/CodeforcesIcon";
-import { link } from "fs";
 
 // Types & Interfaces
 interface OtherProject {
@@ -88,6 +87,28 @@ export const skills = [
     "Zustand",
     "C",
     "C++"
+];
+
+export const experiences = [
+    {
+        id: 1,
+        title: "Frontend Developer",
+        employmentType: "Freelance",
+        location: "Remote",
+        startingDate: "Aug 2025",
+        endingDate: "Jan 2026",
+        description: {
+            intro: "Built responsive web interfaces for international clients, handling development, client communication, and delivery end to end.",
+            points: [
+                "Worked on the frontend implementation of an early-stage SaaS MVP using Next.js, TypeScript, Tailwind CSS, and Framer Motion.",
+                "Built a client-side property discovery website in vanilla JavaScript, with property listings, detail views, search and filtering, and interactive map-based browsing powered by Leaflet.js.",
+                "Developed six responsive pages for Water Workforce using HTML5 and CSS3.",
+                "Converted Figma designs into responsive, pixel-accurate web pages.",
+                "Communicated directly with clients, adapted to changing requirements, and delivered revisions based on feedback."
+            ]
+        },
+        techStack: ["Next.js", "React.js", "TypeScript", "JavaScript", "Tailwind CSS", "Leaflet.js", "HTML5", "CSS3", "Git"]
+    }
 ];
 
 export const allProjects = [

@@ -78,7 +78,7 @@ const BlogsSection = () => {
             {/* ---- Section Heading ---- */}
             <div className="heading flex items-center mt-2.5 mb-10">
                 <p className="font-mono text-lg md:text-xl leading-[23px] md:leading-[26px] text-[#64ffda] relative bottom-1 mr-2.5 select-none">
-                    03.
+                    04.
                 </p>
 
                 <h3 className="font-calibre text-2xl leading-[31px] md:text-[32px] md:leading-[42px] text-[#ccd6f6] font-semibold whitespace-nowrap">

@@ -12,6 +12,7 @@ import SocialLinks from "./components/SocialLinks";
 import FixedEmail from "./components/FixedEmail";
 import LoadingUI from "./components/LoadingUI"
 import AboutSection from "./components/AboutSection";
+import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
 import OtherProjectsSection from "./components/OtherProjectsSection";
 import BlogsSection from "./components/BlogsSection";
@@ -167,6 +168,7 @@ const Home = () => {
       <main className={`max-w-[1600px] mx-auto ${breakpoint1 ? "px-[50px]" : "px-[25px]"} ${breakpoint2 ? "px-[150px]" : "md:px-[100px]"}`}>
         <HeroSection />
         <AboutSection />
+        <ExperienceSection />
         <ProjectsSection />
         <OtherProjectsSection />
         <BlogsSection />

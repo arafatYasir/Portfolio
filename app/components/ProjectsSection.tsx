@@ -55,7 +55,7 @@ const ProjectsSection = () => {
         <section id="projects" className="max-w-[1000px] mx-auto py-[100px] md:py-[150px]">
             {/* ---- Section Heading ---- */}
             <div className="flex items-center mt-2.5 mb-10">
-                <p className="font-mono text-lg md:text-xl leading-[23px] md:leading-[26px] text-[#64ffda] relative bottom-1 mr-2.5 select-none">02.</p>
+                <p className="font-mono text-lg md:text-xl leading-[23px] md:leading-[26px] text-[#64ffda] relative bottom-1 mr-2.5 select-none">03.</p>
 
                 <h3 className="font-calibre text-2xl leading-[31px] md:text-[32px] md:leading-[42px] text-[#ccd6f6] font-semibold">Some Projects I&apos;ve Built</h3>
 
